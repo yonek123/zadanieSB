@@ -138,11 +138,11 @@ public class Main {
                 for (int i = 0; i < severityTypeInFile.size(); i++) {
                     System.out.println("\t" + severityTypeInFile.get(i).name + ": " + severityCountInFile.get(i));
                     logsCounterInFile += severityCountInFile.get(i);
-                    if (severityTypeInFile.get(i).value <= 200 && severityTypeInFile.get(i).value != 0) {
+                    if (severityTypeInFile.get(i).value <= 200) {
                         errorFatalCounterInFile += severityCountInFile.get(i);
                     }
                 }
-                if (severityTypeInFile.stream().anyMatch(p -> p.value <= 200 && p.value != 0)) {
+                if (severityTypeInFile.stream().anyMatch(p -> p.value <= 200)) {
                     System.out.println("Ratio of the number of logs in " + f.getName() + " with severity ERROR or higher to all logs: " + errorFatalCounterInFile + ":" + logsCounterInFile);
                 }
 
@@ -167,11 +167,11 @@ public class Main {
             for (int i = 0; i < severityType.size(); i++) {
                 System.out.println("\t" + severityType.get(i).name + ": " + severityCount.get(i));
                 logsCounter += severityCount.get(i);
-                if (severityType.get(i).value <= 200 && severityType.get(i).value != 0) {
+                if (severityType.get(i).value <= 200) {
                     errorFatalCounter += severityCount.get(i);
                 }
             }
-            if (severityType.stream().anyMatch(p -> p.value <= 200 && p.value != 0)) {
+            if (severityType.stream().anyMatch(p -> p.value <= 200)) {
                 System.out.println("Ratio of the number of logs with severity ERROR or higher to all logs: " + errorFatalCounter + ":" + logsCounter);
             }
         }
@@ -196,7 +196,7 @@ public class Main {
         return true;
     }
 
-    public enum Severity {
+    public enum Severity { //Based on log4j built-in log levels, OTHER to handle non standard ones
         OFF(0, "OFF"),
         FATAL(100, "FATAL"),
         ERROR(200, "ERROR"),
@@ -204,7 +204,7 @@ public class Main {
         INFO(400, "INFO"),
         DEBUG(500, "DEBUG"),
         TRACE(600, "TRACE"),
-        OTHER(1000, "OTHER");
+        OTHER(10000, "OTHER");
 
         public final Integer value;
         public final String name;
