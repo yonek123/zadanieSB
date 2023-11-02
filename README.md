@@ -1,6 +1,6 @@
 # ZadanieSB
 
-## Opis zadania - logreadera (aplikacja standalone)
+## Treść zadania - wykonania logreadera (aplikacja standalone)
 
 Wymagania dotyczące działania aplikacji:
 1) po starcie szuka na dysku D: katalogu o nazwie 'logs',
