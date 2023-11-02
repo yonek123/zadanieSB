@@ -21,7 +21,7 @@ Aby uruchomić aplikację należy:
 2. Przejść do katalogu executable (polecenie "cd [ścieżka do katalogu z projektem]\executable");
 3. Wykonać komendę "java -jar zadanieSB.jar".
 
-Alternatywnie aplikację uruchomić można z poziomu kodu za pomocą dowolnego kompilatora.
+Alternatywnie aplikację uruchomić można z poziomu kodu.
 
 Program po uruchomieniu wyświetli wyniki działania w konsoli.
 W przypadku, gdy katalog "D:\logs" nie istnieje lub jest pusty wyświetlone zostaną sotsowne informacje.
