@@ -30,10 +30,10 @@ W przypadku, gdy katalog "D:\logs" nie istnieje lub jest pusty wyświetlone zost
 W katalogu "struktura tabeli" znajduje się graficzna reprezentacja struktury tabeli przechowującej logi oraz implementacja w formie pliku sql zawierającego zapytanie tworzące tabelę. Zapytanie jest zgodne z systemem MySQL 8.0.
 
 Przykładowe zapytanie:
-INSERT INTO Logs (LogDateTime, LogSeverity, LogLibrary, LogThread, LogDetails) VALUES
-("2018-12-04 11:37:20.321", "INFO",  "org.jboss.modules", "(main)", "JBoss Modules version 1.4.3.Final"),
-("2017-12-04 11:37:20.833", "DEBUG",  "org.jboss.as.config", "(MSC service thread 1-7)", "Configured system properties"),
-("2017-12-04 11:37:22.280", "FATAL",  "org.jboss.as.server", "(Controller Boot Thread)", "WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details."),
+INSERT INTO Logs (LogDateTime, LogSeverity, LogLibrary, LogThread, LogDetails) VALUES  
+("2018-12-04 11:37:20.321", "INFO",  "org.jboss.modules", "(main)", "JBoss Modules version 1.4.3.Final"),  
+("2017-12-04 11:37:20.833", "DEBUG",  "org.jboss.as.config", "(MSC service thread 1-7)", "Configured system properties"),  
+("2017-12-04 11:37:22.280", "FATAL",  "org.jboss.as.server", "(Controller Boot Thread)", "WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details."),  
 ("2017-12-12 11:36:52.047", "ERROR",  "org.jboss.msc.service.fail", "(ServerService Thread Pool -- 59)", "MSC000001:Failed to start service jboss.persistenceunit: org.jboss.msc.service.StartException in service jboss.persistenceunit: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
 	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:172)
 	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:117)
