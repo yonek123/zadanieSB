@@ -1,4 +1,4 @@
-# zadanieSB
+# ZadanieSB
 
 ## Opis zadania - logreadera (aplikacja standalone)
 
