@@ -30,7 +30,7 @@ W przypadku, gdy katalog "D:\logs" nie istnieje lub jest pusty wyświetlone zost
 W katalogu "struktura tabeli" znajduje się graficzna reprezentacja struktury tabeli przechowującej logi oraz implementacja w formie pliku sql zawierającego zapytanie tworzące tabelę. Zapytanie jest zgodne z systemem MySQL 8.0.
 
 Przykładowe zapytanie:
-INSERT INTO `Logs` (`LogDateTime`, `LogSeverity`, `LogLibrary`, `LogThread`, `LogDetails`) VALUES
+INSERT INTO Logs (LogDateTime, LogSeverity, LogLibrary, LogThread, LogDetails) VALUES
 ("2018-12-04 11:37:20.321", "INFO",  "org.jboss.modules", "(main)", "JBoss Modules version 1.4.3.Final"),
 ("2017-12-04 11:37:20.833", "DEBUG",  "org.jboss.as.config", "(MSC service thread 1-7)", "Configured system properties"),
 ("2017-12-04 11:37:22.280", "FATAL",  "org.jboss.as.server", "(Controller Boot Thread)", "WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details."),
